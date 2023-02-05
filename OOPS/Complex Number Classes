@@ -1,0 +1,24 @@
+ // complex number classes 
+ public class ComplexNumbers {
+	// Complete this class
+	private int real,imaginary;
+	private int areal , aimg;
+	public ComplexNumbers(int real,int imaginary)
+	{
+		this.real=real;
+		this.imaginary=imaginary;
+	}
+	public void plus(ComplexNumbers c2){
+		areal = real +c2.real;
+		aimg = imaginary +c2.imaginary;
+
+	}
+	public void multiply(ComplexNumbers c2){
+		areal = real*c2.real - imaginary*c2.imaginary;
+		aimg = real*c2.imaginary +imaginary*c2.real;
+	}
+	public void print(){
+		System.out.println(areal+" + i"+aimg);
+	}
+	
+}
